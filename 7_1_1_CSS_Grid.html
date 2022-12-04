@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+    <style>
+        .container1{
+            display: grid;
+            background-color: yellow;
+            grid-row-gap: 5px;
+            grid-column-gap: 10px;
+            grid-template-columns: auto auto auto;      /* it will set 3 columns of same width */
+            margin: 2rem 0rem;
+        }
+        .item1{
+            background-color: aqua;
+            border: 2px solid black;
+        }
+        .container2{
+            display: grid;
+            background-color: yellow;
+            grid-gap: 5px 10px;     /*short hand property of grid-row-gap and grid-column-gap. First value will be for 'row' and second for 'column'. If only 1 value is given, then that value will be for both row and column. */
+            grid-template-columns: 100px 200px 40px auto;      /* it will set 4 columns with 1st column of width: 100px, 2nd column: 200px, 3rd column: 40px, and the 4th column will have automatic remaining width. */
+            padding: 1rem;
+            margin: 2rem 0rem;
+        }
+        .item2{
+            background-color: aqua;
+            border: 2px solid black;
+        }
+        .container3{
+            display: grid;
+            background-color: yellow;
+            grid-gap: 10px;
+            grid-template-columns: 100px 200px 40px auto;
+            grid-template-rows: 100px 200px 410px auto;     /* works same as 'grid-template-column' but instead of columns, it works for rows. */
+            padding: 1rem;
+            margin: 4rem 0rem;
+        }
+        .item3{
+            background-color: aqua;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="item1">item 1</div>
+        <div class="item1">item 2</div>
+        <div class="item1">item 3</div>
+        <div class="item1">item 4</div>
+    </div>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <div class="container2">
+        <div class="item2">item 1</div>
+        <div class="item2">item 2</div>
+        <div class="item2">item 3</div>
+        <div class="item2">item 4</div>
+        <div class="item2">item 5</div>
+        <div class="item2">item 6</div>
+        <div class="item2">item 7</div>
+    </div>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <div class="container3">
+        <div class="item3">item 1</div>
+        <div class="item3">item 2</div>
+        <div class="item3">item 3</div>
+        <div class="item3">item 4</div>
+        <div class="item3">item 5</div>
+        <div class="item3">item 6</div>
+        <div class="item3">item 7</div>
+    </div>
+</body>
+</html>

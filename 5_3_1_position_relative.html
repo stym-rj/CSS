@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static box </title>
+    <style>
+        *{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-size: 1.2rem;
+        }
+        .container{
+            background-color: black;
+            width: 100vw;
+            height: 10vh;
+        }
+        
+        .box1{
+            background-color: red;
+            margin: auto;
+            width: 50vw;
+            height: 40vh;
+        }
+        .box2{
+            background-color: royalblue;
+            width: 20%;
+            height: 30%;
+            position: relative;         /* NOTE: the main position of this box will remain conserved, and it will overlap to other boxes when top/bottom/left/right is set*/
+            top: 100px;         
+            left: 250px;
+            text-align: center;
+        }
+        .box2::selection{
+            background-color: greenyellow;
+        }
+        .box3{
+            background-color: burlywood;
+            width: 20%;
+            height: 30%;
+        }
+        .box4{
+            background-color: goldenrod;
+            width: 20%;
+            height: 30%;
+            position: relative;
+            left: 150px;
+        }
+        .box5{
+            background-color: rgb(97, 218, 32);
+            width: 5%;
+            height: 10%;
+            position: relative;
+            left: 700px;
+            bottom: 250px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <div class="box1"> Box 1
+        <div class="box2"> Main Box(2)</div>
+        <div class="box3"> Box 3 </div>
+        <div class="box4"> Box 4 </div>
+        <div class="box5"> 5 </div>
+    </div>
+</body>
+</html>

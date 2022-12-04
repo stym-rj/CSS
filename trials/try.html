@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            width: 600px;
+            height: 600px;
+            padding: 4rem 15rem;
+            background-color: red;
+        }
+
+        .box1 {
+            height: 200px;
+            width: 150px;
+            border-radius: 20px;
+            background-color: rgba(50, 153, 237, 0.584);
+            backdrop-filter: blur(10px);
+            margin: 40px -70px;
+            padding: 50px;
+            display: flex;
+            flex: auto;
+            float: left;
+            justify-content: space-evenly;
+            z-index: auto;
+        }
+        .box1:hover {
+            transform: scale(1.05);
+            z-index: 1;
+            transition-duration: 0.4s;
+            background-color: rgb(228, 234, 239);
+            box-shadow: 0px 0px 20px 10px rgba(116, 118, 120, 0.811);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+    </div>
+</body>
+
+</html>

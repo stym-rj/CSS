@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: aliceblue;
+        }
+        .container{
+            margin: 50px 30px;
+            padding: 50px;
+        }
+        .box1{
+            height: 200px;
+            width: 150px;
+            /* border: 2px solid red; */
+            border-radius: 20px;
+            background-color: rgb(228, 234, 239);
+            box-shadow: 0px 0px 20px 5px rgba(205, 210, 214, 0.811);
+            margin: 40px 40px;
+            padding: 50px;
+            display: flex;
+            flex: auto;
+            float: left;
+            justify-content: space-evenly;
+        }
+        .box1:not(:first-child){
+            /* margin-top: 90px; */
+            /* margin-left: 10px; */
+        }
+        .box1:hover{
+            transform: scale(1.05);
+            /* filter: hue-rotate(10rad); */
+            transition-duration: 0.4s;
+            box-shadow: 0px 0px 20px 10px rgba(188, 193, 197, 0.811);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloremque deleniti nihil, reprehenderit non necessitatibus saepe eveniet aliquid similique libero, quam, quasi voluptatem.</div>
+        <div class="box1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit eaque quis nisi ea necessitatibus facere. A assumenda ut beatae ex dignissimos. Quasi, dolore?</div>
+        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa similique, laboriosam nam amet eaque consequatur labore dolorem nobis tenetur dolore voluptate quis beatae voluptatum.</div>
+        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis modi incidunt accusamus, nemo ut est amet unde in praesentium, a neque repudiandae ipsam. Quibusdam, veniam!</div>
+    </div>
+</body>
+</html>

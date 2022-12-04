@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(233, 233, 233);
+
+}
+nav{
+    background-color: darkBlue;
+    color: white;
+    height: 50vh;
+    width: 10rem;
+    font-size: 1.5rem;
+}
+.main{
+    color: darkred;
+}
+.bg-image{
+    background-image: url("resources/1.jpg");
+    background-size: 244px 344px;
+}
+.vertical-bar{
+    height: 150vh;
+    width: 50wh;
+    color: white;
+    background-image: url("resources/2.png");
+    background-attachment: fixed;
+}
+.verify-bg{
+    background: tomato url("resources/3.jpg")  no-repeat top right ;
+    height: 100vh;
+}

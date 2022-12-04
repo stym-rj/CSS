@@ -1,0 +1,19 @@
+.progressBar{
+    background-color: red;
+    width: 50vw;
+    height: 2vh;
+    display: inline-block;
+    left: 25%;
+    top: 90%;
+    position: absolute;
+    animation: animateProgress 10s ease-out 1 normal;
+    animation
+}
+@keyframes animateProgress {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 50vw;
+    }
+}

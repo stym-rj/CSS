@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello heading </title>
+    <style>
+        .box1{
+            background-color: red;
+            width: 15rem;
+            height: 15rem;
+            float: left;
+            display: inline-block;
+        }
+        .box2{
+            width: 20rem;
+            height: 15rem;
+            background-color: blue;
+            display: inline-block;
+            position: absolute;
+            visibility: hidden;
+        }
+        .box1:hover + .box2{
+            visibility:visible;
+            position: relative;
+
+        }
+        .box2A{
+            width: 5rem;
+            height: 5rem;
+            background-color: yellow;
+            display: inline-block;
+        }
+        .box2B{
+            width: 5rem;
+            height: 5rem;
+            background-color: green;
+            display: inline-block;
+        }
+        .box2C{
+            width: 5rem;
+            height: 5rem;
+            background-color: black;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+    </div>
+    <div class="box2">
+        <div class="box2A"></div>
+        <div class="box2B"></div>
+        <div class="box2C"></div>
+    </div>
+</body>
+
+</html>

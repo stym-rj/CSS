@@ -1,0 +1,23 @@
+#box{
+    animation:moving-box 20s linear infinite,  box-rotation 20s linear infinite;
+    transform-origin: center;
+}
+@keyframes box-rotation{
+    from{
+        transform: rotateZ(0deg);
+        }
+        to{
+            transform: rotateZ(360deg);
+        }
+    }
+@keyframes moving-box {
+    0%{
+        transform: translateX(-40%);
+    }
+    50%{
+        transform: translateX(40%);
+    }
+    100%{
+        transform: translateX(-40%);
+    }
+}

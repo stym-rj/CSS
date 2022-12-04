@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wrap</title>
+    <style>
+        *{
+            font-size: 1.3rem;
+        }
+        .container1{
+            height: 70vh;
+            background-color: antiquewhite;
+            display: flex;
+            flex-wrap: wrap;        
+            align-items: center;
+        }
+        .box1{
+            /* height: 300px; */
+            width: 300px;
+            flex-shrink: 4;             /* pta nhi kya h ye .. fijul.. search krlo internet pe.. avi mn nhi h */
+            background-color: blue;
+            border: 2px solid black;
+        }
+        .box2{
+            /* height: 300px; */
+            width: 300px;
+            flex-shrink: 2;
+            background-color: red;
+            border: 2px solid black;
+        }
+        .box3{
+            /* height: 300px; */
+            width: 300px;
+            flex-shrink: 1;
+            background-color: magenta;
+            border: 2px solid black;  
+        }
+        .box4{
+            /* height: 300px; */
+            width: 300px;
+            flex-shrink: 1;
+            background-color: yellowgreen;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+    </div>
+</body>
+</html>

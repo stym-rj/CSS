@@ -1,0 +1,39 @@
+<!-- this property hides the div and doesnot removes the div. this element keeps the space for the division on the screen -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display- inline-block</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 600px;        /* this property wont work.*/
+            height: 100px;      /*this property wont work.*/
+            display: inline-block;
+            visibility: hidden;
+            margin: 55px;
+            padding: 20px;
+            background-color: red;
+        }
+        .box2{
+            width: 500px;        /* this property wont work.*/
+            height: 100px;      /*this property wont work.*/
+            display: inline-block;
+            margin: 55px;
+            padding: 20px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">Lorem ipsum dolor sit amet consectetur aum ut maxime vero? Molestias exercitationem aliquid, voluptate eum in tempora, dolore voluptatum quam explicabo ad perferendis expedita assumenda nesciunt?</div>
+    <div class="box2">Lorem ipsum dolor sit amet consectetur adipisiassumenda delectus excepturi quod exercitationem eveniet molestias accusantium illum? Illo dignissimos placeat saepe.</div>
+</body>
+</html>

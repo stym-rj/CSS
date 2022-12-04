@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box1{
+    height:5rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: block;
+}
+.box1 ul li{
+    display: inline-block;
+    margin: 2rem 1rem;
+    text-align: right;
+}
+.box1 ul li a{              /*box1 ke ul ke li ke a ke andar*/
+    color: white;
+    text-decoration: none;
+
+}
+
+.box2{
+    height: 80vh;
+    width: 50%;
+    background-color: red;
+    display: inline-block;
+}
+
+.box3{
+    height: 80vh;
+    width: 50%;
+    background-color: green;
+    display: inline-block;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 3rem;
+    padding: 1rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-transform: uppercase;
+}
+.center{
+    text-align: center;
+}

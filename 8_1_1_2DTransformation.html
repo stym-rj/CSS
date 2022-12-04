@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>transformations</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            font-family: 'Poppins', sans-serif;
+            height: 25rem;
+            width: 10rem;
+            background-color: red;
+            display: block;
+            transform: translate(5rem, 3rem) rotate(-45deg);
+
+        }
+        .box1:nth-child(2){
+            background-color: blue;
+            transform: translate(25rem, 3rem) rotate(-45deg);
+            transform-origin: bottom left;
+        }
+        .box1:nth-child(3){
+            margin-left: 20rem;
+            background-color: antiquewhite;
+            transform: scaleX(3);       /* scaling on Y axis works the same way. syntax: (transform: scaleY(3))...      if you want to scale both x and y, just do (transform : scale(3)).  */
+        }
+        .box1:nth-child(4){
+            margin: 5rem;
+            background-color: aquamarine;
+            transform: skew(3deg, 10deg);
+        }
+
+        /* matrix is a transformation method which contains all the four values of 'scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()' in it. 
+        it is written as ->         transform: matrix( 1.5, 0.5, -0.3, 10, 12);     */
+
+        .box1:nth-child(5){
+            background-color: yellow;
+            transform: matrix( 1.5, 0.5, 0.3, 0.5, 500, 40);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">when origin is not set, default origin =(0,0) w.r.t box1</div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+img{
+    animation: imgRotate 2s linear infinite normal;
+}
+@keyframes imgRotate {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(180deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}

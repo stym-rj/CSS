@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.red-bgcolor{
+    background-color: red;
+    color: white;
+}
+.one{
+    background-color: burlywood;
+    color: tomato;
+    padding: 1rem;
+}
+.bg-royalBlue{
+    background-color: royalblue;
+} 
+.color-purple{
+    color: purple;
+}
+.border-1px{
+    border: 1px solid red;
+}

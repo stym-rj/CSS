@@ -1,0 +1,12 @@
+.progressBar{
+    background-color: rebeccapurple;
+    width: 1vw;
+    height: 2vh;
+    position: absolute;
+    left: 25%;
+    top: 90%;
+}
+.progressBar:hover{
+    width: 50vw;
+    transition-duration: 10s;
+}
